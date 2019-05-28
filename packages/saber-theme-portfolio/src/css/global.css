@@ -73,3 +73,15 @@ a {
     margin-top: 0;
   }
 }
+
+.card {
+  display: block;
+  padding: 20px;
+  border-radius: 3px;
+  color: var(--text-color);
+  background-color: var(--card-bg);
+
+  &:hover {
+    box-shadow: inset 0 0 0 1px var(--border-color);
+  }
+}

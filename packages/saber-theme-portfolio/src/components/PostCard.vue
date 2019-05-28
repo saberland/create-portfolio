@@ -1,5 +1,5 @@
 <template>
-  <saber-link class="post" :to="post.attributes.permalink">
+  <saber-link class="card post" :to="post.attributes.permalink">
     <div class="post-title">
       {{ post.attributes.title }}
     </div>
@@ -41,18 +41,6 @@ export default {
 </script>
 
 <style scoped>
-.post {
-  display: block;
-  padding: 20px;
-  border-radius: 3px;
-  color: var(--text-color);
-  background-color: var(--card-bg);
-
-  &:hover {
-    box-shadow: inset 0 0 0 1px var(--border-color);
-  }
-}
-
 .post-title {
   margin-bottom: 5px;
   font-size: 1.4rem;

@@ -26,6 +26,20 @@ module.exports = {
         text: 'About',
         link: '/about'
       }
+    ],
+    skills: [
+      {
+        topic: 'nodejs',
+        description: `I love Node.js and I use it every single day.`
+      },
+      {
+        topic: 'vue',
+        description: `I contribute to Vue ecosytem every a few days`
+      },
+      {
+        topic: 'webpack',
+        description: `I'm pretty good at webpack, probably`
+      }
     ]
   },
 

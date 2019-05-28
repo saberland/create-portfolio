@@ -2,7 +2,13 @@
 <img src="https://user-images.githubusercontent.com/8784712/58467049-7f611d00-816d-11e9-954d-2048784bbe11.png" alt="create-portfolio-preview">
 </a>
 
-Create Portfolio helps you kickstart a personal website that showcases your work as a software developer.
+## Introduction
+
+Create Portfolio helps you kickstart a personal website that showcases your work as a software developer. It will automatically render a webpage with the owner's profile information, including a photo, bio, and repositories.
+
+Your personal website is waiting to be personalized, though. It includes space to highlight your specific areas of interest in software development, like languages or industries. And it's standing by to publish your next great blog post.
+
+It's all possible using the combination of [Saber](https://saber.land) (for building your website), and GitHub's API (for automatically populating your website with content).
 
 ## Quick Start
 
@@ -131,6 +137,29 @@ module.exports = {
   }
 }
 ```
+
+### Skills
+
+Showcase your skills:
+
+```js
+module.exports = {
+  themeConfig: {
+    skills: [
+      {
+        topic: 'nodejs',
+        description: `I'm a Node.js core contributor`,
+        // `image` is optional, by default we load from GitHub
+        image: 'https://...'
+      }
+    ]
+  }
+}
+```
+
+The `topic` should be a valid [GitHub topic](https://github.com/topics), if the topic doesn't have a image by default on GitHub, you need to provide one yourself.
+
+You can check if the image exists by visiting `https://github.com/github/explore/tree/master/topics/{topic}` (replace `{topic}` with actual topic).
 
 ## License
 

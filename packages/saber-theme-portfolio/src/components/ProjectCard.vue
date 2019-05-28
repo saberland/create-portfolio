@@ -1,5 +1,5 @@
 <template>
-  <a :href="project.url" class="project" target="_blank">
+  <a :href="project.url" class="card project" target="_blank">
     <div class="project-title">{{ project.name }}</div>
     <div class="project-description">{{ project.description }}</div>
     <div class="project-meta">
@@ -34,19 +34,6 @@ export default {
 </script>
 
 <style scoped>
-.project {
-  display: block;
-  background-color: var(--card-bg);
-  border-radius: 3px;
-  padding: 20px;
-  color: var(--text-color-light);
-  transition: transform 0.3s ease;
-
-  &:hover {
-    box-shadow: inset 0 0 0 1px var(--border-color);
-  }
-}
-
 .project-title {
   font-size: 1.2rem;
   margin-bottom: 10px;
