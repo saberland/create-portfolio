@@ -1,5 +1,9 @@
 <template>
-  <a class="card" :href="`https://github.com/topics/${skill.topic}`">
+  <a
+    class="card"
+    :href="`https://github.com/topics/${skill.topic}`"
+    target="_blank"
+  >
     <div
       class="skill-cover"
       :style="{ backgroundImage: `url(${image})` }"
