@@ -1,5 +1,7 @@
 #!/usr/bin/env node
 const { cac } = require('cac')
+const update = require('update-notifier')
+const pkg = require('../package')
 
 const cli = cac('create-portfolio')
 
@@ -18,5 +20,7 @@ process.on('unhandledRejection', err => {
   console.error(err.stack)
   process.exit(1)
 })
+
+update({ pkg }).notify()
 
 cli.parse()
