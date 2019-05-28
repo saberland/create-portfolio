@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.1](https://github.com/saberland/create-portfolio/compare/v0.1.0...v0.1.1) (2019-05-28)
+
+### Bug Fixes
+
+- ensure project language ([fd3ae7d](https://github.com/saberland/create-portfolio/commit/fd3ae7d))
+- package metadata ([69c7bd2](https://github.com/saberland/create-portfolio/commit/69c7bd2))
+
+### Features
+
+- showcase skills, fix [#2](https://github.com/saberland/create-portfolio/issues/2) ([54303d9](https://github.com/saberland/create-portfolio/commit/54303d9))
+
 # 0.1.0 (2019-05-28)
 
 ### Features
