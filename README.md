@@ -1,5 +1,5 @@
 <a href="https://create-portfolio-demo.saber.land/">
-<img src="https://user-images.githubusercontent.com/8784712/58467049-7f611d00-816d-11e9-954d-2048784bbe11.png" alt="create-portfolio-preview">
+<img src="https://user-images.githubusercontent.com/8784712/58475893-cc4eee80-8181-11e9-8467-e85ccd28a06c.png" alt="create-portfolio-preview">
 </a>
 
 ## Introduction
