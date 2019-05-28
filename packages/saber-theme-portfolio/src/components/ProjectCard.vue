@@ -3,7 +3,7 @@
     <div class="project-title">{{ project.name }}</div>
     <div class="project-description">{{ project.description }}</div>
     <div class="project-meta">
-      <span class="project-language">
+      <span v-if="project.language" class="project-language">
         <CodeIcon />
         {{ project.language }}
       </span>
