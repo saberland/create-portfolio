@@ -1,5 +1,10 @@
 <template>
-  <a :href="project.url" class="card project" target="_blank">
+  <a
+    :href="project.url"
+    class="card project"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
     <div class="project-title">{{ project.name }}</div>
     <div class="project-description">{{ project.description }}</div>
     <div class="project-meta">

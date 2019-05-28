@@ -3,6 +3,7 @@
     class="card"
     :href="`https://github.com/topics/${skill.topic}`"
     target="_blank"
+    rel="noopener noreferrer"
   >
     <div
       class="skill-cover"

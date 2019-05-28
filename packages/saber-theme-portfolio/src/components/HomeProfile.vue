@@ -24,7 +24,10 @@
       <div class="profile-meta-items">
         <div class="profile-meta-item">
           <GithubIcon />
-          <a target="_blank" :href="`https://github.com/${$themeConfig.github}`"
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            :href="`https://github.com/${$themeConfig.github}`"
             >@{{ $themeConfig.github }}</a
           >
         </div>
@@ -32,6 +35,7 @@
           <TwitterIcon />
           <a
             target="_blank"
+            rel="noopener noreferrer"
             :href="`https://twitter.com/${$themeConfig.twitter}`"
             >@{{ $themeConfig.twitter }}</a
           >
@@ -42,6 +46,7 @@
       </div>
       <a
         v-if="$themeConfig.sponsorLink"
+        rel="noopener noreferrer"
         target="_blank"
         class="sponsor-link"
         :href="$themeConfig.sponsorLink"
