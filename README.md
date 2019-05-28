@@ -10,14 +10,25 @@ Your personal website is waiting to be personalized, though. It includes space t
 
 It's all possible using the combination of [Saber](https://saber.land) (for building your website), and GitHub's API (for automatically populating your website with content).
 
+## Prerequisite
+
+You need [Node.js](https://nodejs.org) installed on your machine.
+
 ## Quick Start
 
-Create a new project with `npm init`:
+Create a new project with a single command:
 
 ```bash
-npm init portfolio my-site
+npx create-portfolio my-site
 # OR Yarn
 yarn create portfolio my-site
+```
+
+Alternatively, you can install `create-portfolio` globally:
+
+```bash
+npm i -g create-portfolio
+create-portfolio my-site
 ```
 
 Change into your new directory:
