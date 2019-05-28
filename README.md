@@ -93,7 +93,7 @@ Use `themeConfig` option in `saber-config.js` for theme configuration.
 
 ### Project
 
-By default we fetch your GitHub top 6 starred projects, if set to `pinned-project`, will use pinned repository instead:
+By default we fetch your GitHub top 6 starred repositories, if set to `pinned-project`, will use pinned repository instead:
 
 ```js
 module.exports = {
