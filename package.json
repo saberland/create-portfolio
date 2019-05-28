@@ -1,0 +1,55 @@
+{
+  "private": true,
+  "name": "create-portfolio",
+  "version": "0.0.0",
+  "license": "MIT",
+  "scripts": {
+    "test": "xo && lerna run test"
+  },
+  "devDependencies": {
+    "eslint-config-prettier": "^4.3.0",
+    "eslint-config-rem": "^4.0.0",
+    "eslint-plugin-prettier": "^3.1.0",
+    "eslint-plugin-vue": "^5.2.2",
+    "husky": "^2.3.0",
+    "lerna": "^3.14.1",
+    "lint-staged": "^8.1.7",
+    "prettier": "^1.17.1",
+    "xo": "^0.24.0"
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "xo": {
+    "extensions": [
+      "vue"
+    ],
+    "extends": [
+      "rem",
+      "plugin:vue/recommended",
+      "prettier/vue",
+      "plugin:prettier/recommended"
+    ],
+    "rules": {
+      "import/no-unassigned-import": "off",
+      "unicorn/filename-case": "off"
+    }
+  },
+  "lint-staged": {
+    "linters": {
+      "*.{json,md}": [
+        "prettier --write",
+        "git add"
+      ],
+      "*.{js,vue}": [
+        "xo --fix",
+        "git add"
+      ]
+    }
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  }
+}

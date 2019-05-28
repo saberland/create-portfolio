@@ -1,0 +1,13 @@
+{
+  "private": true,
+  "name": "demo",
+  "license": "MIT",
+  "scripts": {
+    "dev": "saber",
+    "build": "saber build"
+  },
+  "devDependencies": {
+    "saber": "^0.6.4",
+    "saber-plugin-query-posts": "^0.3.1"
+  }
+}

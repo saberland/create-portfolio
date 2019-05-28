@@ -1,0 +1,29 @@
+.is-dark-style {
+  --bg: #000;
+  --card-bg: rgb(20, 20, 20);
+  --text-color: #fff;
+  --text-color-lighter: #ccc;
+  --profile-width: 400px;
+  --border-color: #4e4e4e;
+  --hover-border-color: rgb(156, 156, 156);
+  --nav-link-color: rgb(102, 102, 102);
+  --nav-link-active-color: #fff;
+  --nav-link-hover-color: #ccc;
+  --button-border-color: #4e4e4e;
+  --button-hover-border-color: rgb(156, 156, 156);
+}
+
+.is-light-style {
+  --bg: #fff;
+  --card-bg: #f9f9f9;
+  --text-color: #333;
+  --text-color-lighter: rgb(187, 187, 187);
+  --profile-width: 400px;
+  --border-color: #e2e2e2;
+  --hover-border-color: #ccc;
+  --nav-link-color: rgb(177, 174, 174);
+  --nav-link-active-color: #000;
+  --nav-link-hover-color: rgb(85, 85, 85);
+  --button-border-color: #e2e2e2;
+  --button-hover-border-color: #ccc;
+}
