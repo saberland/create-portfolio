@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.3](https://github.com/saberland/create-portfolio/compare/v0.1.2...v0.1.3) (2019-05-28)
+
+### Bug Fixes
+
+- **pkg:** add missing README ([2cfa0e4](https://github.com/saberland/create-portfolio/commit/2cfa0e4))
+- add noopener noreferrer ([a06fe39](https://github.com/saberland/create-portfolio/commit/a06fe39))
+- open skills in new tab ([#5](https://github.com/saberland/create-portfolio/issues/5)) ([195583a](https://github.com/saberland/create-portfolio/commit/195583a))
+
 ## [0.1.1](https://github.com/saberland/create-portfolio/compare/v0.1.0...v0.1.1) (2019-05-28)
 
 ### Bug Fixes
