@@ -61,10 +61,32 @@ module.exports = async (dir, options) => {
 
   const projectName = path.basename(dir)
 
+  let npmClient = 'npm'
+  try {
+    const { status } = spawnSync('yarn', ['--version'])
+    if (status === 0) {
+      npmClient = 'yarn'
+    }
+  } catch (error) {
+    /* Ignore */
+  }
+
   // Render templates with ejs
   stream.use(stream => {
     for (const file of stream.fileList) {
-      stream.writeContents(file, ejs.render(stream.fileContents(file), answers))
+      stream.writeContents(
+        file,
+        ejs.render(
+          stream.fileContents(file),
+          Object.assign(
+            {
+              projectName,
+              npmClient
+            },
+            answers
+          )
+        )
+      )
     }
   })
 
@@ -95,16 +117,6 @@ module.exports = async (dir, options) => {
   })
 
   await stream.dest(dir)
-
-  let npmClient = 'npm'
-  try {
-    const { status } = spawnSync('yarn', ['--version'])
-    if (status === 0) {
-      npmClient = 'yarn'
-    }
-  } catch (error) {
-    /* Ignore */
-  }
 
   console.log()
   console.log(colors.bold('  To run the website locally:'))
