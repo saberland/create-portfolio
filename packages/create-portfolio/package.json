@@ -5,6 +5,11 @@
     "lib",
     "template"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/saberland/create-portfolio.git",
+    "directory": "packages/create-portfolio"
+  },
   "bin": "lib/cli.js",
   "license": "MIT",
   "dependencies": {
