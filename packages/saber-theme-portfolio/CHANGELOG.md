@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.6](https://github.com/saberland/create-portfolio/compare/v0.1.5...v0.1.6) (2019-05-28)
+
+### Bug Fixes
+
+- **theme:** code padding ([9d98e05](https://github.com/saberland/create-portfolio/commit/9d98e05))
+
 ## [0.1.5](https://github.com/saberland/create-portfolio/compare/v0.1.4...v0.1.5) (2019-05-28)
 
 ### Features
