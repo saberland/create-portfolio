@@ -77,6 +77,10 @@ module.exports = async (dir, options) => {
             private: true,
             name: projectName,
             license: 'MIT',
+            scripts: {
+              dev: 'saber',
+              build: 'saber build'
+            },
             devDependencies: {
               saber: '^0.6.4',
               'saber-theme-portfolio': 'latest',
