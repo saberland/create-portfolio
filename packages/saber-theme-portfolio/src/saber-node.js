@@ -46,4 +46,14 @@ exports.beforePlugins = async function() {
   this.hooks.onUpdateConfigFile.tap('theme-node-api', () => {
     updateConfig()
   })
+
+  this.applyPlugin(require('saber-plugin-prismjs'))
+}
+
+exports.chainWebpack = function(config) {
+  config.plugin('constants').tap(([constants]) => [
+    Object.assign(constants, {
+      __PORTFOLIO_STYLE__: JSON.stringify(this.config.themeConfig.style)
+    })
+  ])
 }

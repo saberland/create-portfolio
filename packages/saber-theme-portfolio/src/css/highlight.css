@@ -1,0 +1,14 @@
+.saber-highlight {
+  background-color: var(--card-bg);
+}
+
+.saber-highlight:before {
+  color: var(--code-language-color);
+}
+
+:not(pre) code {
+  background-color: var(--card-bg);
+  border-radius: 3px;
+  padding: 3px;
+  font-size: .875rem;
+}

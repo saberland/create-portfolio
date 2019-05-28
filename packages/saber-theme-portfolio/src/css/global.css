@@ -1,4 +1,5 @@
 @import "./variables.css";
+@import "./highlight.css";
 
 body {
   font: 16px/1.6 "Source Sans Pro", serif;
@@ -51,7 +52,7 @@ a {
 }
 
 .page-title {
-  font-size: 2.4rem;
+  font-size: 3rem;
   font-weight: 400;
   margin: 0 0 20px 0;
   line-height: 1.4;
@@ -71,6 +72,14 @@ a {
 
   &>*:first-child {
     margin-top: 0;
+  }
+
+  & h2,
+  & h3,
+  & h4,
+  & h5,
+  & h6 {
+    font-weight: 400;
   }
 }
 
