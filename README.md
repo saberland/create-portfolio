@@ -91,6 +91,18 @@ module.exports = {
 
 Use `themeConfig` option in `saber-config.js` for theme configuration.
 
+### Project
+
+By default we fetch your GitHub top 6 starred projects, if set to `pinned-project`, will use pinned repository instead:
+
+```js
+module.exports = {
+  themeConfig: {
+    project: 'pinned-repos'
+  }
+}
+```
+
 ### Style
 
 By default it uses `dark` style:

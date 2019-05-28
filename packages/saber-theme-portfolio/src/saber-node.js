@@ -1,7 +1,9 @@
 const axios = require('axios')
 
 exports.beforePlugins = async function() {
-  const { github } = this.config.themeConfig
+  const { github, project } = this.config.themeConfig
+  const isFetchPinnedProject = project === 'pinned-repos'
+
   this.log.info(`Fetching GitHub data for ${github}..`)
   const [userResult, projectsResult] = await Promise.all([
     axios({
@@ -10,7 +12,9 @@ exports.beforePlugins = async function() {
     }),
     axios({
       method: 'GET',
-      url: `https://api.github.com/search/repositories?q=user:${github}&sort:stars&per_page=6`
+      url: isFetchPinnedProject
+        ? `https://gh-pinned-repos.now.sh/?username=${github}`
+        : `https://api.github.com/search/repositories?q=user:${github}&sort:stars&per_page=6`
     })
   ])
 
@@ -28,15 +32,25 @@ exports.beforePlugins = async function() {
       {
         hireable: userResult.data.hireable,
         profilePicture: userResult.data.avatar_url,
-        projects: projectsResult.data.items.map(item => {
-          return {
-            name: item.name,
-            url: item.html_url,
-            description: item.description,
-            language: item.language,
-            stars: item.stargazers_count
-          }
-        })
+        projects: isFetchPinnedProject
+          ? projectsResult.data.map(item => {
+              return {
+                name: item.repo,
+                url: `https://github.com/${item.owner}/${item.repo}`,
+                description: item.description,
+                language: item.language,
+                stars: item.stars
+              }
+            })
+          : projectsResult.data.items.map(item => {
+              return {
+                name: item.name,
+                url: item.html_url,
+                description: item.description,
+                language: item.language,
+                stars: item.stargazers_count
+              }
+            })
       },
       this.config.themeConfig
     )
