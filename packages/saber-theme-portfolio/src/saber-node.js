@@ -1,8 +1,8 @@
 const axios = require('axios')
 
 exports.beforePlugins = async function() {
-  const { github, project } = this.config.themeConfig
-  const isFetchPinnedProject = project === 'pinned-repos'
+  const { github, projects } = this.config.themeConfig
+  const usePinnedRepos = projects === 'pinned-repos'
 
   this.log.info(`Fetching GitHub data for ${github}..`)
   const [userResult, projectsResult] = await Promise.all([
@@ -12,7 +12,7 @@ exports.beforePlugins = async function() {
     }),
     axios({
       method: 'GET',
-      url: isFetchPinnedProject
+      url: usePinnedRepos
         ? `https://gh-pinned-repos.now.sh/?username=${github}`
         : `https://api.github.com/search/repositories?q=user:${github}&sort:stars&per_page=6`
     })
@@ -32,7 +32,7 @@ exports.beforePlugins = async function() {
       {
         hireable: userResult.data.hireable,
         profilePicture: userResult.data.avatar_url,
-        projects: isFetchPinnedProject
+        projects: usePinnedRepos
           ? projectsResult.data.map(item => {
               return {
                 name: item.repo,
