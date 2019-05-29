@@ -31,7 +31,10 @@ exports.beforePlugins = async function() {
     this.config.themeConfig = Object.assign(
       {
         hireable: userResult.data.hireable,
-        profilePicture: userResult.data.avatar_url,
+        profilePicture: userResult.data.avatar_url
+      },
+      this.config.themeConfig,
+      {
         projects: usePinnedRepos
           ? projectsResult.data.map(item => {
               return {
@@ -51,8 +54,7 @@ exports.beforePlugins = async function() {
                 stars: item.stargazers_count
               }
             })
-      },
-      this.config.themeConfig
+      }
     )
   }
 
