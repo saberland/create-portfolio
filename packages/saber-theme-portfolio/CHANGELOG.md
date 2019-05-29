@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.7](https://github.com/saberland/create-portfolio/compare/v0.1.6...v0.1.7) (2019-05-29)
+
+### Features
+
+- support using GitHub pinned repositories ([#8](https://github.com/saberland/create-portfolio/issues/8)) ([7a4e90a](https://github.com/saberland/create-portfolio/commit/7a4e90a))
+
 ## [0.1.6](https://github.com/saberland/create-portfolio/compare/v0.1.5...v0.1.6) (2019-05-28)
 
 ### Bug Fixes
