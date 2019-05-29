@@ -12,6 +12,7 @@ module.exports = {
 
   // Configure the theme
   themeConfig: {
+    projects: 'pinned-repos',
     style: 'dark',
     github: 'egoist',
     twitter: '_egoistlily',

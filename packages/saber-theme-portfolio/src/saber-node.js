@@ -1,7 +1,9 @@
 const axios = require('axios')
 
 exports.beforePlugins = async function() {
-  const { github } = this.config.themeConfig
+  const { github, projects } = this.config.themeConfig
+  const usePinnedRepos = projects === 'pinned-repos'
+
   this.log.info(`Fetching GitHub data for ${github}..`)
   const [userResult, projectsResult] = await Promise.all([
     axios({
@@ -10,7 +12,9 @@ exports.beforePlugins = async function() {
     }),
     axios({
       method: 'GET',
-      url: `https://api.github.com/search/repositories?q=user:${github}&sort:stars&per_page=6`
+      url: usePinnedRepos
+        ? `https://gh-pinned-repos.now.sh/?username=${github}`
+        : `https://api.github.com/search/repositories?q=user:${github}&sort:stars&per_page=6`
     })
   ])
 
@@ -27,18 +31,30 @@ exports.beforePlugins = async function() {
     this.config.themeConfig = Object.assign(
       {
         hireable: userResult.data.hireable,
-        profilePicture: userResult.data.avatar_url,
-        projects: projectsResult.data.items.map(item => {
-          return {
-            name: item.name,
-            url: item.html_url,
-            description: item.description,
-            language: item.language,
-            stars: item.stargazers_count
-          }
-        })
+        profilePicture: userResult.data.avatar_url
       },
-      this.config.themeConfig
+      this.config.themeConfig,
+      {
+        projects: usePinnedRepos
+          ? projectsResult.data.map(item => {
+              return {
+                name: item.repo,
+                url: `https://github.com/${item.owner}/${item.repo}`,
+                description: item.description,
+                language: item.language,
+                stars: item.stars
+              }
+            })
+          : projectsResult.data.items.map(item => {
+              return {
+                name: item.name,
+                url: item.html_url,
+                description: item.description,
+                language: item.language,
+                stars: item.stargazers_count
+              }
+            })
+      }
     )
   }
 
