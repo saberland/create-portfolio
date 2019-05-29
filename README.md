@@ -91,14 +91,14 @@ module.exports = {
 
 Use `themeConfig` option in `saber-config.js` for theme configuration.
 
-### Project
+### Projects
 
-By default we fetch your GitHub top 6 starred repositories, if set to `pinned-project`, will use pinned repository instead:
+By default we fetch your top 6 starred repositories from GitHub, if set to `pinned-project`, it will use pinned repositories instead:
 
 ```js
 module.exports = {
   themeConfig: {
-    project: 'pinned-repos'
+    projects: 'pinned-repos'
   }
 }
 ```
