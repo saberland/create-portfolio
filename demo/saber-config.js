@@ -3,7 +3,8 @@
 
 module.exports = {
   siteConfig: {
-    description: 'An unsung artist.'
+    description: 'An unsung artist.',
+    url: 'https://create-portfolio-demo.saber.land'
   },
 
   // Use the package `saber-theme-portfolio`
@@ -18,6 +19,7 @@ module.exports = {
     twitter: '_egoistlily',
     sponsorLink: 'https://patreon.com/egoist',
     sponsorTip: 'Support my work',
+    disqus: 'create-portfolio',
     nav: [
       {
         text: 'Home',
