@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.8](https://github.com/egoist/create-portfolio/compare/v0.1.7...v0.1.8) (2019-05-31)
+
+### Bug Fixes
+
+- **deps:** [security] bump axios from 0.18.0 to 0.19.0 ([#12](https://github.com/egoist/create-portfolio/issues/12)) ([cea701f](https://github.com/egoist/create-portfolio/commit/cea701f))
+- **deps:** bump saber-highlight-css from 0.0.4 to 0.0.5 ([#10](https://github.com/egoist/create-portfolio/issues/10)) ([95dba7f](https://github.com/egoist/create-portfolio/commit/95dba7f))
+- **deps:** bump saber-plugin-prismjs from 0.2.0 to 0.2.1 ([#9](https://github.com/egoist/create-portfolio/issues/9)) ([bba91ff](https://github.com/egoist/create-portfolio/commit/bba91ff))
+
+### Features
+
+- Add disqus support ([#11](https://github.com/egoist/create-portfolio/issues/11)) ([b9a8fa9](https://github.com/egoist/create-portfolio/commit/b9a8fa9))
+
 ## [0.1.7](https://github.com/egoist/create-portfolio/compare/v0.1.6...v0.1.7) (2019-05-29)
 
 ### Features
