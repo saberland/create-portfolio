@@ -15,7 +15,7 @@
   },
   "license": "MIT",
   "dependencies": {
-    "axios": "^0.18.0",
+    "axios": "^0.19.0",
     "grid.css": "^0.6.1",
     "jump.js": "^1.0.2",
     "normalize.css": "^8.0.1",
