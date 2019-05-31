@@ -22,6 +22,13 @@
               {{ tag.name }}
             </saber-link>
           </div>
+          <Disqus
+            v-if="page.attributes.comments !== false && $themeConfig.disqus"
+            class="comment"
+            :url="$siteConfig.url"
+            :permalink="page.attributes.permalink"
+            :shortname="$themeConfig.disqus"
+          />
         </div>
       </div>
     </div>
@@ -31,12 +38,14 @@
 <script>
 import { CornerUpLeftIcon, HashIcon } from 'vue-feather-icons'
 import PostMeta from '../components/PostMeta.vue'
+import Disqus from '../components/Disqus.vue'
 
 export default {
   components: {
     CornerUpLeftIcon,
     PostMeta,
-    HashIcon
+    HashIcon,
+    Disqus
   },
 
   props: ['page'],
@@ -138,5 +147,9 @@ export default {
     border-color: var(--hover-border-color);
     color: var(--text-color);
   }
+}
+
+.comment {
+  margin-top: 60px;
 }
 </style>

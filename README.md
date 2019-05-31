@@ -184,6 +184,32 @@ The `topic` should be a valid [GitHub topic](https://github.com/topics), if the 
 
 You can check if the image exists by visiting `https://github.com/github/explore/tree/master/topics/{topic}` (replace `{topic}` with actual topic).
 
+### Comments
+
+You can use Disqus for comments:
+
+```yml
+themeConfig:
+  disqus: disqus-short-name
+
+# Note that `siteConfig.url` is required for Disqus
+siteConfig:
+  url: https://example.com
+```
+
+Comments are only enabled for `post` layout, to disable comments in specific page, you can use the page attribute `comments`:
+
+```markdown
+---
+title: Hello
+layout: post
+date: 2018-08-12
+comments: false
+---
+
+Hello World!
+```
+
 ## License
 
 MIT &copy; [EGOIST](https://github.com/egoist)
