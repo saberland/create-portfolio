@@ -11,12 +11,12 @@
           <div class="page-content">
             <slot name="default" />
           </div>
-          <div v-if="page.tags" class="tags">
+          <div v-if="page.tags" class="post-tags">
             <saber-link
               v-for="tag in page.tags"
               :key="tag.permalink"
               :to="tag.permalink"
-              class="tag"
+              class="post-tag"
             >
               <HashIcon />
               {{ tag.name }}
@@ -24,7 +24,7 @@
           </div>
           <Disqus
             v-if="page.attributes.comments !== false && $themeConfig.disqus"
-            class="comment"
+            class="post-comments"
             :url="$siteConfig.url"
             :permalink="page.attributes.permalink"
             :shortname="$themeConfig.disqus"
@@ -122,13 +122,13 @@ export default {
   margin-top: 30px;
 }
 
-.tags {
+.post-tags {
   display: flex;
   margin-top: 60px;
   font-size: 0.9rem;
 }
 
-.tag {
+.post-tag {
   display: flex;
   align-items: center;
   border: 1px solid var(--border-color);
@@ -149,7 +149,7 @@ export default {
   }
 }
 
-.comment {
+.post-comments {
   margin-top: 60px;
 }
 </style>
