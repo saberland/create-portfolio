@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.9](https://github.com/saberland/create-portfolio/compare/v0.1.8...v0.1.9) (2019-06-01)
+
+### Bug Fixes
+
+- prevent from styling highlighted code, closes [#13](https://github.com/saberland/create-portfolio/issues/13) ([edea9bd](https://github.com/saberland/create-portfolio/commit/edea9bd))
+
 ## [0.1.8](https://github.com/saberland/create-portfolio/compare/v0.1.7...v0.1.8) (2019-05-31)
 
 ### Bug Fixes
