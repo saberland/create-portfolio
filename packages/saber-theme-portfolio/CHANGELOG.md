@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.10](https://github.com/saberland/create-portfolio/compare/v0.1.9...v0.1.10) (2019-06-06)
+
+### Bug Fixes
+
+- **theme:** ensure post width ([91c3fe2](https://github.com/saberland/create-portfolio/commit/91c3fe2))
+
 ## [0.1.9](https://github.com/saberland/create-portfolio/compare/v0.1.8...v0.1.9) (2019-06-01)
 
 ### Bug Fixes
