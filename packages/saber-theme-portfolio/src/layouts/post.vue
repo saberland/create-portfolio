@@ -2,7 +2,7 @@
   <div class="wrap">
     <saber-link to="/" class="back-home"> <CornerUpLeftIcon />Home </saber-link>
     <div class="container">
-      <div class="columns">
+      <div class="columns post-columns">
         <div class="column is-6 is-offset-3">
           <div class="page-title post-title">
             {{ page.attributes.title }}
@@ -151,5 +151,9 @@ export default {
 
 .post-comments {
   margin-top: 60px;
+}
+
+.post-columns {
+  width: 100%;
 }
 </style>
