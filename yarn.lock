@@ -8168,9 +8168,9 @@ vue-eslint-parser@^5.0.0:
     lodash "^4.17.11"
 
 vue-feather-icons@^4.21.0:
-  version "4.21.0"
-  resolved "https://registry.npmjs.org/vue-feather-icons/-/vue-feather-icons-4.21.0.tgz#062ab7f6a33c4c4c5c9c94d5be307ebac5ef5ef2"
-  integrity sha512-PEpJunYaGljd/m0n19zLwUWXxhcVXUEM/ldbhMf9cL8lV5GQIhoeWbsLip4W9u4m8nEDQzuE757T7xEwKg0p3A==
+  version "4.22.0"
+  resolved "https://registry.yarnpkg.com/vue-feather-icons/-/vue-feather-icons-4.22.0.tgz#9652bbb4865b70b0e8c961bbec65310dd1da572b"
+  integrity sha512-ZG8FSFPUYoNet9jjXJFLiTnEH8eCp5Pj0FchtxjTPP6D4qPfcbFFnKDusT+xDj/0zilnuVCLVn/GAghs7k5fCg==
   dependencies:
     babel-helper-vue-jsx-merge-props "^2.0.2"
 
