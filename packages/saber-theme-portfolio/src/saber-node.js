@@ -15,6 +15,22 @@ exports.beforePlugins = async function() {
       url: usePinnedRepos
         ? `https://gh-pinned-repos.now.sh/?username=${github}`
         : `https://api.github.com/search/repositories?q=user:${github}&sort:stars&per_page=6`
+    }).catch(error => {
+      if (usePinnedRepos) {
+        throw error
+      }
+
+      // No repos
+      if (
+        error.response &&
+        error.response.status === 422 &&
+        error.response.data &&
+        error.response.data.message === 'Validation Failed'
+      ) {
+        return { data: { items: [] } }
+      }
+
+      throw error
     })
   ])
 
