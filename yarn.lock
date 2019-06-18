@@ -5165,10 +5165,10 @@ macos-release@^2.2.0:
   resolved "https://registry.npmjs.org/macos-release/-/macos-release-2.2.0.tgz#ab58d55dd4714f0a05ad4b0e90f4370fef5cdea8"
   integrity sha512-iV2IDxZaX8dIcM7fG6cI46uNmHUxHE4yN+Z8tKHAW1TBPMZDIKHf/3L+YnOuj/FK9il14UaVdHmiQ1tsi90ltA==
 
-majo@^0.7.1:
-  version "0.7.1"
-  resolved "https://registry.npmjs.org/majo/-/majo-0.7.1.tgz#ade9f6dae47107362c1c22376f19f19d211f618d"
-  integrity sha512-+hHYX4hXGPe+xXeI2s2DVzWU+57W2BYupwnsZ+KD39J1s2ZBGYjQwZ73JBhilZvLb8fYK+jLdsMbLlNxNyG+2w==
+majo@^0.8.0:
+  version "0.8.0"
+  resolved "https://registry.yarnpkg.com/majo/-/majo-0.8.0.tgz#8e29f87c7fd6f8071d7965effb846a294c1b1aef"
+  integrity sha512-SRcbkel1avru+EGpCNl0FsXMg2shka4wtVRbY3V5oEM3RPdE/Sb2usKzLeT5vI9ritKmWpBhu7nTmRgTc2W1fA==
   dependencies:
     fast-glob "^2.2.3"
     fs-extra "^7.0.0"
