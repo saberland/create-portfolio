@@ -8131,10 +8131,10 @@ vfile@^2.0.0:
     unist-util-stringify-position "^1.0.0"
     vfile-message "^1.0.0"
 
-vue-compile@^0.5.3:
-  version "0.5.3"
-  resolved "https://registry.npmjs.org/vue-compile/-/vue-compile-0.5.3.tgz#ba38658200d5f463809fc640c7c672292bb7f618"
-  integrity sha512-om5gQsGRzIKK/2jccUNy2f1y04jZmuwO1MJilKTBzCLn2kdF2/T/ZwhBKK6etLQQIQ7q+MM7WhIzjlE+U/IBMA==
+vue-compile@^0.6.0:
+  version "0.6.0"
+  resolved "https://registry.yarnpkg.com/vue-compile/-/vue-compile-0.6.0.tgz#bfa9f941a8f1a379a861ad299ac1a249aef7ddc5"
+  integrity sha512-wDecPbYZJ5MYd56I31Ptz7+YzFVM8x01exivWwuofCbeH2+eFnrghYle4N4kuM69U/zl5732y+qwOI2sNQDfvQ==
   dependencies:
     "@babel/core" "^7.0.0"
     "@babel/preset-typescript" "^7.0.0"
