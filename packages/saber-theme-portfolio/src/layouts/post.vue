@@ -51,8 +51,12 @@ export default {
   props: ['page'],
 
   head() {
-    const title = `${this.page.attributes.title} - ${this.$siteConfig.title}`
-    const description = this.page.excerpt.replace(/<(?:.|\n)*?>/gm, '')
+    const title = `${this.page.attributes.title} - ${this.$siteConfig.title}`;
+    const description = this.page.excerpt.replace(/<(?:.|\n)*?>/gm, '');
+    let image = this.$themeConfig.profilePicture;
+    if (this.page.attributes.assets.cover) {
+      image = this.page.attributes.assets.cover
+    }
     return {
       title,
       meta: [
@@ -69,16 +73,16 @@ export default {
           content: `@${this.$themeConfig.twitter}`
         },
         {
-          name: 'og:title',
+          property: 'og:title',
           content: title
         },
         {
-          name: 'og:description',
+          property: 'og:description',
           content: description
         },
-        this.page.attributes.assets.cover && {
-          name: 'og:image',
-          content: this.page.attributes.assets.cover
+        {
+          property: 'og:image',
+          content: image
         }
       ].filter(Boolean)
     }

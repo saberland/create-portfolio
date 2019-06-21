@@ -65,7 +65,21 @@ export default {
 
   head() {
     return {
-      title: `${this.pageTitle} - ${this.$siteConfig.title}`
+      title: `${this.pageTitle} - ${this.$siteConfig.title}`,
+      meta: [
+        {
+          property: 'og:title',
+          content: this.$siteConfig.title,
+        },
+        {
+          property: 'og:description',
+          content: this.$siteConfig.description,
+        },
+        {
+          property: 'og:image',
+          content: this.$themeConfig.profilePicture,
+        },
+      ]
     }
   },
 
