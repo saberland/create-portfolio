@@ -53,10 +53,6 @@ export default {
   head() {
     const title = `${this.page.attributes.title} - ${this.$siteConfig.title}`
     const description = this.page.excerpt.replace(/<(?:.|\n)*?>/gm, '')
-    let image = this.$themeConfig.profilePicture
-    if (this.page.attributes.assets.cover) {
-      image = this.page.attributes.assets.cover
-    }
 
     return {
       title,
@@ -83,7 +79,7 @@ export default {
         },
         {
           property: 'og:image',
-          content: image
+          content: this.page.attributes.assets.cover || this.$themeConfig.profilePicture
         }
       ].filter(Boolean)
     }
