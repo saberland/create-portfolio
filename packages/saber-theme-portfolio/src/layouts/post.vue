@@ -51,12 +51,13 @@ export default {
   props: ['page'],
 
   head() {
-    const title = `${this.page.attributes.title} - ${this.$siteConfig.title}`;
-    const description = this.page.excerpt.replace(/<(?:.|\n)*?>/gm, '');
-    let image = this.$themeConfig.profilePicture;
+    const title = `${this.page.attributes.title} - ${this.$siteConfig.title}`
+    const description = this.page.excerpt.replace(/<(?:.|\n)*?>/gm, '')
+    let image = this.$themeConfig.profilePicture
     if (this.page.attributes.assets.cover) {
       image = this.page.attributes.assets.cover
     }
+
     return {
       title,
       meta: [

@@ -29,22 +29,22 @@ export default {
   props: ['page'],
 
   head() {
-    const description = this.page.excerpt.replace(/<(?:.|\n)*?>/gm, '');
+    const description = this.page.excerpt.replace(/<(?:.|\n)*?>/gm, '')
     return {
       title: `${this.page.attributes.title} - ${this.$siteConfig.title}`,
       meta: [
         {
           property: 'og:title',
-          content: this.$siteConfig.title,
+          content: this.$siteConfig.title
         },
         {
           property: 'og:description',
-          content: description,
+          content: description
         },
         {
           property: 'og:image',
-          content: this.$themeConfig.profilePicture,
-        },
+          content: this.$themeConfig.profilePicture
+        }
       ]
     }
   }
