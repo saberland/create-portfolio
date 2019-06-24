@@ -79,7 +79,9 @@ export default {
         },
         {
           property: 'og:image',
-          content: this.page.attributes.assets.cover || this.$themeConfig.profilePicture
+          content:
+            this.page.attributes.assets.cover ||
+            this.$themeConfig.profilePicture
         }
       ].filter(Boolean)
     }
