@@ -53,6 +53,7 @@ export default {
   head() {
     const title = `${this.page.attributes.title} - ${this.$siteConfig.title}`
     const description = this.page.excerpt.replace(/<(?:.|\n)*?>/gm, '')
+
     return {
       title,
       meta: [
@@ -69,16 +70,18 @@ export default {
           content: `@${this.$themeConfig.twitter}`
         },
         {
-          name: 'og:title',
+          property: 'og:title',
           content: title
         },
         {
-          name: 'og:description',
+          property: 'og:description',
           content: description
         },
-        this.page.attributes.assets.cover && {
-          name: 'og:image',
-          content: this.page.attributes.assets.cover
+        {
+          property: 'og:image',
+          content:
+            this.page.attributes.assets.cover ||
+            this.$themeConfig.profilePicture
         }
       ].filter(Boolean)
     }
