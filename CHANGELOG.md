@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.11](https://github.com/egoist/create-portfolio/compare/v0.1.10...v0.1.11) (2019-06-25)
+
+### Bug Fixes
+
+- fallback to empty array for users with no repos ([#26](https://github.com/egoist/create-portfolio/issues/26)) ([a33fc51](https://github.com/egoist/create-portfolio/commit/a33fc51))
+
+### Features
+
+- updated meta tags ([#30](https://github.com/egoist/create-portfolio/issues/30)) ([f0a1cb7](https://github.com/egoist/create-portfolio/commit/f0a1cb7))
+
 ## [0.1.10](https://github.com/egoist/create-portfolio/compare/v0.1.9...v0.1.10) (2019-06-06)
 
 ### Bug Fixes
