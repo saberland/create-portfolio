@@ -59,7 +59,7 @@ Run `npm run build` to create a production build of your app, generated files ca
 
 Check out [the example post](./packages/create-portfolio/template/pages/_posts/my-first-post.md).
 
-### Adding a social media cover photo
+### Adding a Social Media Cover Photo
 
 By default, all posts will use your GitHub profile picture when embedded on social media. Should you wish to use a different image you can add under `assets.cover`:
 
@@ -74,7 +74,6 @@ tags:
   - life
 ---
 ```
-
 
 ## Site Configuration
 
