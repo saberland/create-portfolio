@@ -62,14 +62,6 @@ export default {
           content: description
         },
         {
-          name: 'twitter:card',
-          content: 'summary'
-        },
-        this.$themeConfig.twitter && {
-          name: 'twitter:creator',
-          content: `@${this.$themeConfig.twitter}`
-        },
-        {
           property: 'og:title',
           content: title
         },

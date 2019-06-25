@@ -26,6 +26,14 @@ export default ({ Vue, setHead }) => {
         {
           name: 'description',
           content: vm.$siteConfig.description
+        },
+        {
+          name: 'twitter:card',
+          content: 'summary'
+        },
+        vm.$themeConfig.twitter && {
+          name: 'twitter:creator',
+          content: `@${vm.$themeConfig.twitter}`
         }
       ]
     }
