@@ -28,9 +28,7 @@ export default {
     image() {
       return (
         this.skill.image ||
-        `https://cdn.jsdelivr.net/gh/github/explore/topics/${
-          this.skill.topic
-        }/${this.skill.topic}.png`
+        `https://cdn.jsdelivr.net/gh/github/explore/topics/${this.skill.topic}/${this.skill.topic}.png`
       )
     }
   }
