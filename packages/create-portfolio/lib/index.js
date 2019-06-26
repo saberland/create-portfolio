@@ -5,6 +5,7 @@ const majo = require('majo')
 const Enquirer = require('enquirer')
 const ejs = require('ejs')
 const colors = require('chalk')
+const themeVersion = require('../package').version
 
 module.exports = async (dir, options) => {
   dir = path.resolve(dir)
@@ -104,9 +105,10 @@ module.exports = async (dir, options) => {
               build: 'saber build'
             },
             devDependencies: {
-              saber: '^0.6.4',
-              'saber-theme-portfolio': 'latest',
-              'saber-plugin-query-posts': '^0.3.1'
+              saber: '^0.6.10',
+              'saber-theme-portfolio': `^${themeVersion}`,
+              'saber-plugin-query-posts': '^0.3.2',
+              'saber-plugin-feed': '^0.3.4'
             }
           },
           null,
