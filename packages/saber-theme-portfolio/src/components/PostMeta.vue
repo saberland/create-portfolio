@@ -33,7 +33,6 @@ export default {
 
 <style scoped>
 .post-meta {
-  margin-bottom: 5px;
   color: var(--text-color-lighter);
 
   & > span {
