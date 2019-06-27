@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.2.0](https://github.com/saberland/create-portfolio/compare/v0.1.11...v0.2.0) (2019-06-27)
+
+### Features
+
+- add saber-plugin-feed to create-portfolio ([#39](https://github.com/saberland/create-portfolio/issues/39)) ([ae068da](https://github.com/saberland/create-portfolio/commit/ae068da))
+
 ## [0.1.11](https://github.com/saberland/create-portfolio/compare/v0.1.10...v0.1.11) (2019-06-25)
 
 **Note:** Version bump only for package create-portfolio

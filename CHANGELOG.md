@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.2.0](https://github.com/egoist/create-portfolio/compare/v0.1.11...v0.2.0) (2019-06-27)
+
+### Bug Fixes
+
+- **theme:** Added twitter:card to all pages ([#34](https://github.com/egoist/create-portfolio/issues/34)) ([c785617](https://github.com/egoist/create-portfolio/commit/c785617))
+- add missing css for page content ([#41](https://github.com/egoist/create-portfolio/issues/41)) ([6523081](https://github.com/egoist/create-portfolio/commit/6523081))
+
+### Features
+
+- add saber-plugin-feed to create-portfolio ([#39](https://github.com/egoist/create-portfolio/issues/39)) ([ae068da](https://github.com/egoist/create-portfolio/commit/ae068da))
+
 ## [0.1.11](https://github.com/egoist/create-portfolio/compare/v0.1.10...v0.1.11) (2019-06-25)
 
 ### Bug Fixes
