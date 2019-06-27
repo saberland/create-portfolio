@@ -92,6 +92,7 @@ export default {
   display: inline-flex;
   align-items: center;
   font-size: 1rem;
+  color: var(--text-color);
 
   &:hover {
     border-color: var(--button-hover-border-color);
