@@ -15,6 +15,9 @@
   --code-language-color: rgb(94, 92, 92);
   --profile-link-color: #fff;
   --profile-link-hover-color: #ccc;
+  --blockquote-bg: var(--card-bg);
+  --blockquote-border-color: var(--border-color);
+  --blockquote-color: #c1c2c5;
 }
 
 .is-light-style {
@@ -32,4 +35,7 @@
   --button-border-color: #e2e2e2;
   --button-hover-border-color: #ccc;
   --code-language-color: #ccc;
+  --blockquote-bg: #f1f1f1;
+  --blockquote-border-color: #ccc;
+  --blockquote-color: #6a737d;
 }
