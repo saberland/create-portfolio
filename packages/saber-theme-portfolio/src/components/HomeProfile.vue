@@ -136,8 +136,12 @@ export default {
 .profile-meta-items {
   margin-top: 25px;
 
+  & a {
+    color: var(--profile-link-color);
+  }
+
   & a:hover {
-    color: var(--text-color-lighter);
+    color: var(--profile-link-hover-color);
   }
 }
 
@@ -164,6 +168,7 @@ export default {
   padding: 10px 0;
   font-size: 1.2rem;
   width: 100%;
+  color: var(--profile-link-color);
 
   & svg {
     width: 1rem;

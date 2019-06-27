@@ -3,12 +3,12 @@
     <div class="post-title">
       {{ post.attributes.title }}
     </div>
-    <PostMeta :attributes="post.attributes" />
     <div
       class="post-excerpt"
       :class="{ 'fixed-height': fixedExcerptHeight }"
       v-html="getExcerpt(post.excerpt)"
     />
+    <PostMeta :attributes="post.attributes" />
   </saber-link>
 </template>
 
@@ -34,6 +34,8 @@ export default {
   methods: {
     getExcerpt(excerpt) {
       const limit = 240
+      // Strip HTML
+      excerpt = excerpt.replace(/<(?:.|\n)*?>/gm, '')
       return excerpt.length > limit ? `${excerpt.slice(0, limit)}...` : excerpt
     }
   }
@@ -41,13 +43,24 @@ export default {
 </script>
 
 <style scoped>
+.post {
+  &:hover {
+    text-decoration: none;
+  }
+}
+
 .post-title {
-  margin-bottom: 5px;
+  margin-bottom: 10px;
   font-size: 1.4rem;
   line-height: 1.4;
 }
 
+.post-excerpt {
+  margin-bottom: 10px;
+}
+
 .post-excerpt.fixed-height {
+  margin-bottom: 0;
   height: 80px;
   overflow: hidden;
   text-overflow: ellipsis;

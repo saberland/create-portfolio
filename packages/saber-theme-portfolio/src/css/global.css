@@ -13,7 +13,7 @@ body {
 
 a {
   text-decoration: none;
-  color: var(--text-color);
+  color: var(--link-color);
 }
 
 .container {
@@ -80,6 +80,63 @@ a {
   & h5,
   & h6 {
     font-weight: 400;
+  }
+
+  & h2 {
+    font-size: 2.4rem;
+  }
+
+  & h3 {
+    font-size: 2.1rem;
+  }
+
+  & h4 {
+    font-size: 1.8rem;
+  }
+
+  & h5 {
+    font-size: 1.5rem;
+  }
+
+  & h6 {
+    font-size: 1.2rem;
+  }
+
+  & a:hover {
+    text-decoration: underline;
+  }
+
+  & blockquote {
+    background: var(--blockquote-bg);
+    border-left: 8px solid var(--blockquote-border-color);
+    margin: 20px 0;
+    padding: 14px 16px;
+    color: var(--blockquote-color);
+
+    &>*:first-child {
+      margin-top: 0;
+    }
+
+    &>*:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  & img {
+    max-width: 100%;
+  }
+
+  & ul, & ol {
+    padding-left: 20px;
+
+    &.task-list {
+      list-style: none;
+      padding-left: 0;
+
+      & input {
+        margin-right: 5px;
+      }
+    }
   }
 }
 
