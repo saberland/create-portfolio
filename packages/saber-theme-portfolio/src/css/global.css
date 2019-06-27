@@ -13,7 +13,7 @@ body {
 
 a {
   text-decoration: none;
-  color: var(--text-color);
+  color: var(--link-color);
 }
 
 .container {
@@ -80,6 +80,10 @@ a {
   & h5,
   & h6 {
     font-weight: 400;
+  }
+
+  & a:hover {
+    text-decoration: underline;
   }
 }
 
