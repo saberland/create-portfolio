@@ -35,7 +35,19 @@ export default ({ Vue, setHead }) => {
           name: 'twitter:creator',
           content: `@${vm.$themeConfig.twitter}`
         }
-      ]
+      ],
+      link: [
+        vm.$feed && {
+          rel: 'alternate',
+          type:
+            vm.$feed.type === 'atom'
+              ? 'application/atom+xml'
+              : vm.$feed.type === 'json'
+              ? 'application/json'
+              : 'application/rss+xml',
+          href: vm.$feed.permalink
+        }
+      ].filter(Boolean)
     }
   })
 }

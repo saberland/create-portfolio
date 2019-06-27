@@ -30,5 +30,8 @@
     "postcss-preset-env": "^6.6.0",
     "vue-compile": "^0.6.0"
   },
+  "peerDependencies": {
+    "saber": ">=0.6.10"
+  },
   "xo": false
 }

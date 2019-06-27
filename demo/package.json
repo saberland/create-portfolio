@@ -7,7 +7,8 @@
     "build": "saber build"
   },
   "devDependencies": {
-    "saber": "^0.6.4",
-    "saber-plugin-query-posts": "^0.3.1"
+    "saber": "^0.6.10",
+    "saber-plugin-feed": "^0.3.4",
+    "saber-plugin-query-posts": "^0.3.2"
   }
 }

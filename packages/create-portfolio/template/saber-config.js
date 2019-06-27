@@ -33,6 +33,12 @@ module.exports = {
   plugins: [
     {
       resolve: 'saber-plugin-query-posts'
+    },
+    {
+      resolve: 'saber-plugin-feed',
+      options: {
+        atomFeed: true
+      }
     }
   ]
 }

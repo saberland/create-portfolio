@@ -2139,6 +2139,13 @@ fast-json-stable-stringify@^2.0.0:
   resolved "https://registry.npmjs.org/fast-json-stable-stringify/-/fast-json-stable-stringify-2.0.0.tgz#d5142c0caee6b1189f87d3a76111064f86c8bbf2"
   integrity sha1-1RQsDK7msRifh9OnYREGT4bIu/I=
 
+feed@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/feed/-/feed-3.0.0.tgz#be9cada49c692197e7e14083711597562d14a486"
+  integrity sha512-2/6RGigcsZkz04LMs8oncuoN08hCOndz7eseLtbSitvIkjDZPkNZY6Y9C2xgTzy1L8u4+TZvCJ/v5zxlmGy2kA==
+  dependencies:
+    xml-js "^1.6.11"
+
 figgy-pudding@^3.5.1:
   version "3.5.1"
   resolved "https://registry.npmjs.org/figgy-pudding/-/figgy-pudding-3.5.1.tgz#862470112901c727a0e495a80744bd5baa1d6790"
@@ -4254,28 +4261,35 @@ saber-log@^0.2.0:
   resolved "https://registry.npmjs.org/saber-log/-/saber-log-0.2.0.tgz#6c4a803a3d8c89f243580f0d7259e396220286d6"
   integrity sha512-S0KbP6uktP0g75t+QG7sx1dkib/S1TyhOxPKFj9325eYVJOYi6ECfyeWiuYsma35MxqJTlFp4Dxw7U57JEjvSA==
 
-saber-markdown@^0.0.7:
-  version "0.0.7"
-  resolved "https://registry.npmjs.org/saber-markdown/-/saber-markdown-0.0.7.tgz#282fe2429e1d34d2ffbff547b7830f8f27d50d07"
-  integrity sha512-tW7iTaZCD3GYxcw8so9H+1ObxKHaE1iRaf/gq/y0Ddz6xd7x65fgsJvEe4RpkYFBhUiJAkdvfNAZiwDaa9Ft2Q==
+saber-markdown@^0.0.9:
+  version "0.0.9"
+  resolved "https://registry.yarnpkg.com/saber-markdown/-/saber-markdown-0.0.9.tgz#b4ae1019f990b23ece893a5e9bac2155f195faa3"
+  integrity sha512-Ze7sRoZZNNWNgybwEBHR1wPuCL8JwZdY/jn7fubEm3lWGfiis7g0coDeLZCymui2u+3nSbAb+AyCJF4+rn4QpA==
 
-saber-plugin-query-posts@^0.3.1:
+saber-plugin-feed@^0.3.4:
+  version "0.3.4"
+  resolved "https://registry.yarnpkg.com/saber-plugin-feed/-/saber-plugin-feed-0.3.4.tgz#bdef19db1ae98b6d7109047f35526479d708530e"
+  integrity sha512-+4bppwbZ7oQXb+3kQwpUf8jMsG8uaUPwL8OxB+S4MfY7hq3WMV4DCcoYo4Qv4JRx3UE/K7Ax6lTFn5e+fXnCLA==
+  dependencies:
+    feed "^3.0.0"
+
+saber-plugin-query-posts@^0.3.2:
   version "0.3.2"
-  resolved "https://registry.npmjs.org/saber-plugin-query-posts/-/saber-plugin-query-posts-0.3.2.tgz#750e17a7ecf9574dee80a4464075717cb56e3d56"
+  resolved "https://registry.yarnpkg.com/saber-plugin-query-posts/-/saber-plugin-query-posts-0.3.2.tgz#750e17a7ecf9574dee80a4464075717cb56e3d56"
   integrity sha512-uHWJ0nDRkZ91acSraF8ovq3ZO4hgXfQzqWSVPWzrR9JocW2VQ2JOAbt5vJUBtO5PT8myfkysJwk1rhS7mOfjFQ==
   dependencies:
     slugo "^0.2.3"
     url-join "^4.0.0"
 
-saber-utils@^0.1.4:
-  version "0.1.4"
-  resolved "https://registry.npmjs.org/saber-utils/-/saber-utils-0.1.4.tgz#207539fc8dc4b8a19ff3930181752d760941e506"
-  integrity sha512-UxqS3aK4AnRaKv+N+tVCgKps9L9+mhEnPDFM7ATwhXQDnDsiWBcAG/ldbn+tPDN6lBfWWn9nBXrvu5VsBPSmXg==
+saber-utils@^0.1.5:
+  version "0.1.5"
+  resolved "https://registry.yarnpkg.com/saber-utils/-/saber-utils-0.1.5.tgz#592da40e5d72015933e953a60aedd27db1501748"
+  integrity sha512-jSc/4otaGGVyagxeFYmuWXfoIGGoADRwxw5SXrrC02ITh9N1b9qYsP20PuReeE2XvAIrzHbqp5o+m6NR3P6pzA==
 
-saber@^0.6.4:
-  version "0.6.5"
-  resolved "https://registry.npmjs.org/saber/-/saber-0.6.5.tgz#0d1ea90fd9f852141517b1544612fa6b7d97a254"
-  integrity sha512-JgxesxtuXUZW6VSzNrTPjZbOBHLkttEPLHJjbyDPuDcChfLmvcy1qJnmUem50OHrboe2aTqKreIzHJCJ0T7fFg==
+saber@^0.6.10:
+  version "0.6.10"
+  resolved "https://registry.yarnpkg.com/saber/-/saber-0.6.10.tgz#dbf40f3b13109d50cfd33a3981639bc7af5dfe24"
+  integrity sha512-SEq7VbdfJ4RbzO7CcIWqAdTg5qecyEwvodlcEzYu+i0SZMKtFt4NaQABDcRAei4LqbYN9TS/CCE6x8/n5+rIpg==
   dependencies:
     "@babel/core" "^7.2.2"
     "@babel/plugin-proposal-object-rest-spread" "^7.2.0"
@@ -4305,8 +4319,8 @@ saber@^0.6.4:
     pretty-ms "^5.0.0"
     resolve-from "^5.0.0"
     saber-log "^0.2.0"
-    saber-markdown "^0.0.7"
-    saber-utils "^0.1.4"
+    saber-markdown "^0.0.9"
+    saber-utils "^0.1.5"
     serve-static "^1.13.2"
     slugo "^0.2.3"
     superstruct "^0.6.0"
@@ -5220,6 +5234,13 @@ wrappy@1:
   version "1.0.2"
   resolved "https://registry.npmjs.org/wrappy/-/wrappy-1.0.2.tgz#b5243d8f3ec1aa35f1364605bc0d1036e30ab69f"
   integrity sha1-tSQ9jz7BqjXxNkYFvA0QNuMKtp8=
+
+xml-js@^1.6.11:
+  version "1.6.11"
+  resolved "https://registry.yarnpkg.com/xml-js/-/xml-js-1.6.11.tgz#927d2f6947f7f1c19a316dd8eea3614e8b18f8e9"
+  integrity sha512-7rVi2KMfwfWFl+GpPg6m80IVMWXLRjO+PxTq7V2CDhoGak0wzYzFgUY2m4XJ47OGdXd8eLE8EmwfAmdjw7lC1g==
+  dependencies:
+    sax "^1.2.4"
 
 xtend@^4.0.0, xtend@~4.0.1:
   version "4.0.1"
