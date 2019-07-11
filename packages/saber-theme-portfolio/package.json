@@ -23,7 +23,7 @@
     "saber-highlight-css": "^0.0.5",
     "saber-plugin-prismjs": "^0.2.0",
     "typeface-source-sans-pro": "^0.0.54",
-    "vue-feather-icons": "^4.21.0"
+    "vue-feather-icons": "^5.0.0"
   },
   "devDependencies": {
     "postcss-import": "^12.0.1",
