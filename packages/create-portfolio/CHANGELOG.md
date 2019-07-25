@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.2.1](https://github.com/saberland/create-portfolio/compare/v0.2.0...v0.2.1) (2019-07-25)
+
+### Bug Fixes
+
+- add siteConfig.url in saber config, fix [#63](https://github.com/saberland/create-portfolio/issues/63) ([3d98910](https://github.com/saberland/create-portfolio/commit/3d98910))
+
 # [0.2.0](https://github.com/saberland/create-portfolio/compare/v0.1.11...v0.2.0) (2019-06-27)
 
 ### Features
