@@ -2,6 +2,11 @@
 // https://saber.land/docs/saber-config.html
 
 module.exports = {
+  siteConfig: {
+    // Change this to the production URL of your website
+    url: 'https://example.com'
+  },
+
   // Use the package `saber-theme-portfolio`
   // More: https://saber.land/docs/themes.html
   theme: 'portfolio',
