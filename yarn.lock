@@ -7159,10 +7159,10 @@ rxjs@^6.3.3, rxjs@^6.4.0:
   dependencies:
     tslib "^1.9.0"
 
-saber-highlight-css@^0.0.5:
-  version "0.0.5"
-  resolved "https://registry.yarnpkg.com/saber-highlight-css/-/saber-highlight-css-0.0.5.tgz#ec0d1c032a47a05a63a89cbcc7548c735d2058f5"
-  integrity sha512-Gf9+HFd1OvLTTfxbLkx72ttd3UlGLolnLGpPGo6VUXxSvfMNicc5sCw+HFCXyLoA0Lq/VGBi6Sh47/kT2vn2hg==
+saber-highlight-css@^0.1.0:
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/saber-highlight-css/-/saber-highlight-css-0.1.0.tgz#deb5df38e723a5f081b03d656a33dc9920815b29"
+  integrity sha512-/F4yGjaKIRy6pMh4D+6nJGIfmYkflLtK08p4GVLmAKv9OeVvYAb1K0m/IfkcSov8v/Zmph9O0OhqeD7QztalPQ==
 
 saber-highlighter-prism@^0.3.1:
   version "0.3.1"
