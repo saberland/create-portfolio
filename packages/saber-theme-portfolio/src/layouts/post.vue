@@ -11,9 +11,9 @@
           <div class="page-content">
             <slot name="default" />
           </div>
-          <div v-if="page.tags" class="post-tags">
+          <div v-if="page.tagsInfo" class="post-tags">
             <saber-link
-              v-for="tag in page.tags"
+              v-for="tag in page.tagsInfo"
               :key="tag.permalink"
               :to="tag.permalink"
               class="post-tag"
