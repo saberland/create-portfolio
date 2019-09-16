@@ -105,10 +105,10 @@ module.exports = async (dir, options) => {
               build: 'saber build'
             },
             devDependencies: {
-              saber: '^0.7.0',
+              saber: '^0.9.0',
               'saber-theme-portfolio': `^${themeVersion}`,
-              'saber-plugin-query-posts': '^0.4.0',
-              'saber-plugin-feed': '^0.3.4'
+              'saber-plugin-query-posts': '^0.4.2',
+              'saber-plugin-feed': '^0.4.2'
             }
           },
           null,
