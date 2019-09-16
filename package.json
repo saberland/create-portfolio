@@ -36,16 +36,14 @@
     }
   },
   "lint-staged": {
-    "linters": {
-      "*.{json,md}": [
-        "prettier --write",
-        "git add"
-      ],
-      "*.{js,vue}": [
-        "xo --fix",
-        "git add"
-      ]
-    }
+    "*.{json,md}": [
+      "prettier --write",
+      "git add"
+    ],
+    "*.{js,vue}": [
+      "xo --fix",
+      "git add"
+    ]
   },
   "husky": {
     "hooks": {
