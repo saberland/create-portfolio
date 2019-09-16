@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.2.2](https://github.com/saberland/create-portfolio/compare/v0.2.1...v0.2.2) (2019-09-16)
+
+### Bug Fixes
+
+- **deps:** bump sabar and sabar-plugin-query-posts ([#66](https://github.com/saberland/create-portfolio/issues/66)) ([0a10a9d](https://github.com/saberland/create-portfolio/commit/0a10a9d))
+
 ## [0.2.1](https://github.com/egoist/create-portfolio/compare/v0.2.0...v0.2.1) (2019-07-25)
 
 ### Bug Fixes
