@@ -22,7 +22,7 @@
     "prismjs": "^1.16.0",
     "saber-highlight-css": "^0.1.1",
     "saber-plugin-prismjs": "^0.2.0",
-    "typeface-source-sans-pro": "^0.0.54",
+    "typeface-source-sans-pro": "^0.0.75",
     "vue-feather-icons": "^5.0.0"
   },
   "devDependencies": {
