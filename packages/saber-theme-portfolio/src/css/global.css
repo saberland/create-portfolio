@@ -51,6 +51,26 @@ a {
   }
 }
 
+.post-cover {
+  overflow: hidden;
+  width: 100%;
+  margin-bottom: 30px;
+  border-radius: 3px;
+  align-content: center;
+  display: flex;
+}
+
+.post-card .post-cover {
+  height: 250px;
+  border-radius: 3px 3px 0 0;
+  margin-bottom: 0;
+}
+
+.post-cover .post-cover__image {
+  width: 100%;
+  object-fit: cover;
+}
+
 .page-title {
   font-size: 3rem;
   font-weight: 400;

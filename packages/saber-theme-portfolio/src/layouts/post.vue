@@ -1,34 +1,50 @@
 <template>
-  <div class="wrap">
-    <saber-link to="/" class="back-home"> <CornerUpLeftIcon />Home </saber-link>
-    <div class="container">
-      <div class="columns post-columns">
-        <div class="column is-6 is-offset-3">
-          <div class="page-title post-title">
-            {{ page.attributes.title }}
-          </div>
-          <PostMeta :attributes="page.attributes" />
-          <div class="page-content">
-            <slot name="default" />
-          </div>
-          <div v-if="page.tagsInfo" class="post-tags">
-            <saber-link
-              v-for="tag in page.tagsInfo"
-              :key="tag.permalink"
-              :to="tag.permalink"
-              class="post-tag"
+  <div>
+    <div class="wrap">
+      <saber-link to="/" class="back-home">
+        <CornerUpLeftIcon />Home
+      </saber-link>
+      <div class="container">
+        <div class="columns post-columns">
+          <div class="column is-6 is-offset-3">
+            <div
+              v-if="
+                page.attributes.assets && $themeConfig.coverLayout === 'minimal'
+              "
+              class="post-cover post-cover-minimal"
             >
-              <HashIcon />
-              {{ tag.name }}
-            </saber-link>
+              <img
+                class="post-cover__image"
+                :src="page.attributes.assets.cover"
+                alt="cover"
+              />
+            </div>
+            <div class="page-title post-title">
+              {{ page.attributes.title }}
+            </div>
+            <PostMeta :attributes="page.attributes" />
+            <div class="page-content">
+              <slot name="default" />
+            </div>
+            <div v-if="page.tagsInfo" class="post-tags">
+              <saber-link
+                v-for="tag in page.tagsInfo"
+                :key="tag.permalink"
+                :to="tag.permalink"
+                class="post-tag"
+              >
+                <HashIcon />
+                {{ tag.name }}
+              </saber-link>
+            </div>
+            <Disqus
+              v-if="page.attributes.comments !== false && $themeConfig.disqus"
+              class="post-comments"
+              :url="$siteConfig.url"
+              :permalink="page.attributes.permalink"
+              :shortname="$themeConfig.disqus"
+            />
           </div>
-          <Disqus
-            v-if="page.attributes.comments !== false && $themeConfig.disqus"
-            class="post-comments"
-            :url="$siteConfig.url"
-            :permalink="page.attributes.permalink"
-            :shortname="$themeConfig.disqus"
-          />
         </div>
       </div>
     </div>
