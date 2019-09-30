@@ -1,6 +1,8 @@
 ---
 title: My First Post
 layout: post
+assets:
+  cover: "./my-first-post.png"
 date: 2019-05-26 20:23:00
 tags:
   - life
