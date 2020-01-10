@@ -9,7 +9,8 @@
           <div class="column is-6 is-offset-3">
             <div
               v-if="
-                page.attributes.assets && $themeConfig.coverLayout === 'minimal'
+                page.attributes.assets.cover &&
+                  $themeConfig.coverLayout === 'minimal'
               "
               class="post-cover post-cover-minimal"
             >

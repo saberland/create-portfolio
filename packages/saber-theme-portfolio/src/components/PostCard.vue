@@ -1,6 +1,6 @@
 <template>
   <saber-link class="post post-card" :to="post.attributes.permalink">
-    <div v-if="post.attributes.assets" class="post-cover">
+    <div v-if="post.attributes.assets.cover" class="post-cover">
       <img
         class="post-cover__image"
         :src="post.attributes.assets.cover"
