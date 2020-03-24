@@ -46,6 +46,7 @@ exports.beforePlugins = async function() {
     )
     this.config.themeConfig = Object.assign(
       {
+        coverLayout: 'minimal',
         hireable: userResult.data.hireable,
         profilePicture: userResult.data.avatar_url
       },

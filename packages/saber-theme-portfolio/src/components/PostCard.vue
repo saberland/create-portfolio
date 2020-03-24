@@ -1,14 +1,23 @@
 <template>
-  <saber-link class="card post" :to="post.attributes.permalink">
-    <div class="post-title">
-      {{ post.attributes.title }}
+  <saber-link class="post post-card" :to="post.attributes.permalink">
+    <div v-if="post.attributes.assets.cover" class="post-cover">
+      <img
+        class="post-cover__image"
+        :src="post.attributes.assets.cover"
+        alt="cover"
+      />
     </div>
-    <div
-      class="post-excerpt"
-      :class="{ 'fixed-height': fixedExcerptHeight }"
-      v-html="getExcerpt(post.excerpt)"
-    />
-    <PostMeta :attributes="post.attributes" />
+    <div class="card">
+      <div class="post-title">
+        {{ post.attributes.title }}
+      </div>
+      <div
+        class="post-excerpt"
+        :class="{ 'fixed-height': fixedExcerptHeight }"
+        v-html="getExcerpt(post.excerpt)"
+      />
+      <PostMeta :attributes="post.attributes" />
+    </div>
   </saber-link>
 </template>
 
