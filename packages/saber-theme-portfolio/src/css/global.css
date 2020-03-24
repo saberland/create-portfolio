@@ -11,6 +11,11 @@ body {
   box-sizing: border-box;
 }
 
+::selection {
+  background-color: var(--text-color);
+  color: var(--bg);
+}
+
 a {
   text-decoration: none;
   color: var(--link-color);
