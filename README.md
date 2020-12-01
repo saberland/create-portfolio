@@ -162,6 +162,45 @@ module.exports = {
 }
 ```
 
+### Instagram
+
+Show the link to your Instagram profile.
+
+```js
+module.exports = {
+  themeConfig: {
+    // Instagram username
+    instagram: ''
+  }
+}
+```
+
+### Youtube
+
+Show the link to your Youtube Channel. Must include 'user/', 'c/', or 'channel/' at beginning, whichever is in your channel URL.
+
+```js
+module.exports = {
+  themeConfig: {
+    // Youtube channel name + prefix
+    youtube: ''
+  }
+}
+```
+
+### Twitch
+
+Show the link to your Twitch Channel.
+
+```js
+module.exports = {
+  themeConfig: {
+    // Twitch channel name
+    twitch: ''
+  }
+}
+```
+
 ### Sponsor
 
 Add a _Sponsor_ button:
