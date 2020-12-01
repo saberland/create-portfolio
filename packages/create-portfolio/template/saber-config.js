@@ -16,6 +16,9 @@ module.exports = {
     style: 'dark',
     github: '<%= github %>',
     twitter: '<%= twitter %>',
+    instagram: '<%= instagram %>',
+    youtube: '<%= youtube %>',
+    twitch: '<%= twitch %>',
     sponsorLink: '<%= sponsorLink %>',
     sponsorTip: 'Support my work',
     nav: [

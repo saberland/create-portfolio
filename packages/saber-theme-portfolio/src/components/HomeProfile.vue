@@ -40,6 +40,33 @@
             >@{{ $themeConfig.twitter }}</a
           >
         </div>
+        <div v-if="$themeConfig.instagram" class="profile-meta-item">
+          <InstagramIcon />
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            :href="`https://instagram.com/${$themeConfig.instagram}`"
+            >@{{ $themeConfig.instagram }}</a
+          >
+        </div>
+        <div v-if="$themeConfig.youtube" class="profile-meta-item">
+          <YoutubeIcon />
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            :href="`https://youtube.com/${$themeConfig.youtube}`"
+            >@{{ $themeConfig.youtube.split('/')[1] }}</a
+          >
+        </div>
+        <div v-if="$themeConfig.twitch" class="profile-meta-item">
+          <TwitchIcon />
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            :href="`https://twitch.tv/${$themeConfig.twitch}`"
+            >@{{ $themeConfig.twitch }}</a
+          >
+        </div>
         <div v-if="$themeConfig.hireable" class="profile-meta-item">
           <BriefcaseIcon />Available for hire
         </div>
@@ -60,20 +87,26 @@
 
 <script>
 import {
-  GithubIcon,
   BriefcaseIcon,
-  TwitterIcon,
+  CornerDownRightIcon,
+  GithubIcon,
   HeartIcon,
-  CornerDownRightIcon
+  InstagramIcon,
+  TwitchIcon,
+  TwitterIcon,
+  YoutubeIcon
 } from 'vue-feather-icons'
 
 export default {
   components: {
-    GithubIcon,
     BriefcaseIcon,
-    TwitterIcon,
+    CornerDownRightIcon,
+    GithubIcon,
     HeartIcon,
-    CornerDownRightIcon
+    InstagramIcon,
+    TwitchIcon,
+    TwitterIcon,
+    YoutubeIcon
   }
 }
 </script>
