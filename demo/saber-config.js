@@ -20,6 +20,10 @@ module.exports = {
     sponsorLink: 'https://patreon.com/egoist',
     sponsorTip: 'Support my work',
     disqus: 'create-portfolio',
+    contactForm: {
+      type: 'netlify',
+      formSubmitRedirect: '/success'
+    },
     nav: [
       {
         text: 'Home',
@@ -28,6 +32,10 @@ module.exports = {
       {
         text: 'About',
         link: '/about'
+      },
+      {
+        text: 'Contact',
+        link: '/contact'
       }
     ],
     skills: [

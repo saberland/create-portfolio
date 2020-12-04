@@ -18,6 +18,10 @@ module.exports = {
     twitter: '<%= twitter %>',
     sponsorLink: '<%= sponsorLink %>',
     sponsorTip: 'Support my work',
+    contactForm: {
+      type: 'netlify',
+      formSubmitRedirect: '/success'
+    },
     nav: [
       {
         text: 'Home',
@@ -26,6 +30,10 @@ module.exports = {
       {
         text: 'About',
         link: '/about'
+      },
+      {
+        text: 'Contact',
+        link: '/contact'
       }
     ]
   },
