@@ -7,7 +7,7 @@
     "test": "xo && lerna run test"
   },
   "devDependencies": {
-    "eslint-config-prettier": "^6.0.0",
+    "eslint-config-prettier": "^7.0.0",
     "eslint-config-rem": "^4.0.0",
     "eslint-plugin-prettier": "^3.1.0",
     "eslint-plugin-vue": "^5.2.2",
